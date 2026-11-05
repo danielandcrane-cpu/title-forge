@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 中国风基础样式 */
+html, body, #app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f5f0e6 0%, #ebe4d4 100%);
+  color: #2a2622;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 印章红角标装饰 */
+.seal-corner {
+  position: relative;
+}
+.seal-corner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: #b84444;
+  border-radius: 0 0 0 12px;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* 简约水墨分隔线 */
+.ink-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c4b8a4 20%, #c4b8a4 80%, transparent);
+}
