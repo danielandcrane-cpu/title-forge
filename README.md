@@ -1,5 +1,47 @@
-# Vue 3 + Vite
+# TitleForge
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> 老泡菜专属多平台标题生成工作台 · 中国风
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+一个主题 → 5 平台差异化标题。基础版纯规则 + 模板随机组合，离线可用。
+
+## 平台覆盖
+
+| 平台 | 风格 | 模板示例 |
+|---|---|---|
+| YouTube ▶ | 深度解读 / 硬核分析 | `{topic}的深层解读 \| 你不知道的5件事` |
+| TikTok ♪ | 悬念钩子 / 短平快 | `POV: You just discovered {topic}` |
+| 抖音 ♫ | 真相揭秘 / 口语化 | `关于{topic}，这可能是最狠的一条视频` |
+| B站 📺 | 硬核科普 / UP主教你 | `【硬核科普】{topic}到底是什么？从0讲透` |
+| 小红书 📕 | emoji 多 / 痛点明确 | `🍵终于找到！{topic}的正确打开方式✨` |
+
+## 功能
+
+- ✅ 自动语言检测（中文输入 → 中文标题，英文输入 → 英文标题）
+- ✅ 一键复制（每个平台单独复制，Toast 反馈）
+- ✅ 收藏（localStorage 持久化，刷新不丢）
+- ✅ 每个平台单独「换一条」
+- ✅ 上次输入的主题自动恢复
+
+## 本地运行
+
+```bash
+npm install
+npm run dev
+```
+
+打开 http://localhost:5174
+
+## 技术栈
+
+- Vue 3 (`<script setup>`) + Vite 8 + Tailwind 3.4
+- 中国风 UI（宣纸色 / 墨黑 / 印章红 / 衬线体）
+
+## 后续扩展
+
+- [ ] DeepSeek AI API 接入（标题质量跃升）
+- [ ] 模板库管理（增删改、导入导出）
+- [ ] 多版本对比（同主题生成 3 组选最优）
+
+---
+
+_Day 8 · 2026-11-06 · Vibe Coding 熟手养成 · 老泡菜专属_
